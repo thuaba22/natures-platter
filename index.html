@@ -26,6 +26,26 @@
       .font-sora {
         font-family: "Sora", serif;
       }
+
+      @keyframes glow {
+        0% {
+          text-shadow: 0 0 5px #ff9f0e, 0 0 10px #ff9f0e, 0 0 20px #ff9f0e,
+            0 0 40px #ff9f0e;
+        }
+        50% {
+          text-shadow: 0 0 10px #ff751a, 0 0 30px #ff751a, 0 0 60px #ff751a,
+            0 0 90px #ff751a;
+        }
+        100% {
+          text-shadow: 0 0 5px #ff9f0e, 0 0 10px #ff9f0e, 0 0 20px #ff9f0e,
+            0 0 40px #ff9f0e;
+        }
+      }
+
+      .glow-heading {
+        color: #ff9f0e;
+        animation: glow 2s infinite;
+      }
     </style>
     <script>
       tailwind.config = {
@@ -137,8 +157,11 @@
       >
         <!-- banner content -->
         <div class="mb-9 max-w-[341px] mx-auto md:max-w-full">
-          <h1 class="font-semibold text-third text-[32px] md:text-[56px]">
-            Freshness <span class="text-accent">You Can</span> <br />
+          <h1
+            class="font-semibold text-third text-[28px] md:text-[48px] glow-heading"
+          >
+            Freshness <span class="text-accent">You Can</span>
+            <br class="hidden md:block" />
             <span class="text-accent">Count</span> On, Prices You’ll Love!
           </h1>
           <p class="mt-4 md:mt-8 max-w-[799px] text-third opacity-[80%]">
