@@ -18,6 +18,10 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/5e93069130.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       .font-sora {
         font-family: "Sora", serif;
@@ -732,7 +736,160 @@
           </div>
         </div>
       </section>
+
+      <!-- arrival & offers -->
+      <section class="container mb-12 md:mb-[500px] px-4 md:px-5 mx-auto">
+        <h2 class="text-accent font-semibold text-2xl md:text-4xl">
+          Arrival & Offers
+        </h2>
+        <!-- offers card container -->
+        <div
+          class="flex mt-6 md:mt-12 md:mb-32 flex-col gap-4 md:flex-row md:gap-5"
+        >
+          <!-- offer card 1 -->
+          <div
+            class="bg-[#115414] md:w-[70%] flex justify-between items-center pt-4 pl-4 md:pt-10 md:pl-10 text-white rounded-3xl"
+          >
+            <!-- offer card content -->
+            <div>
+              <!-- offer card logo -->
+              <div class="">
+                <img
+                  class="h-[42px] md:h-full"
+                  src="./images/dawat-logo.png"
+                  alt=""
+                />
+              </div>
+              <!-- offer card tag -->
+              <div
+                class="bg-[#63B76D] mt-[14px] md:mt-[44px] py-[8px] md:py-[15px] px-4 md:px-10 rounded-xl"
+              >
+                <p
+                  class="text-base text-center text-nowrap md:text-2xl font-normal"
+                >
+                  Cook Exotic Dishes
+                </p>
+              </div>
+              <h3 class="text-[22px] mt-[14px] md:text-[39px] md:mt-[28px]">
+                UP to <span class="font-bold">20% OFF</span>
+              </h3>
+            </div>
+            <!-- offer card image -->
+            <div class="width-[147px] md:w-[352px]">
+              <img src="./images/dawat-mock-up.png" alt="" />
+            </div>
+          </div>
+          <!-- offer card 2 -->
+          <div
+            class="bg-[#102861] md:max-w-[520px] flex justify-between md:gap-2 items-center pt-4 pl-4 pr-4 md:pr-2 md:pt-5 md:pl-6 text-white rounded-3xl"
+          >
+            <!-- offer card content -->
+            <div class="md:space-y-7">
+              <!-- offer card logo -->
+              <div class="w-[64px] h-[70px] md:h-auto md:w-[98px]">
+                <img src="./images/india-gate-logo.png" alt="" />
+              </div>
+              <!-- offer card tag -->
+              <div
+                class="bg-[#2A4D97] mt-[24px] md:mt-[44px] py-[8px] md:py-[15px] px-4 md:px-10 rounded-xl"
+              >
+                <p
+                  class="text-base text-center text-nowrap md:text-2xl font-normal"
+                >
+                  World’s No.1 Rice
+                </p>
+              </div>
+              <h3
+                class="text-[22px] mt-[14px] md:mt-0 md:text-[39px] text-nowrap"
+              >
+                UP to <span class="font-bold">40% OFF</span>
+              </h3>
+            </div>
+            <!-- offer card image -->
+            <div class="w-[120px] md:w-[170px]">
+              <img src="./images/india-gate-mock-up.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <!-- Footer Section -->
+    <footer class="bg-green-600 pt-32 pb-12 relative hidden">
+      <div class="max-w-6xl mx-auto px-4 md:px-5">
+        <!-- Subscription Card  -->
+        <div
+          class="absolute -top-44 left-1/2 transform -translate-x-1/2 w-full max-w-6xl bg-secondary py-[55px] px-[110px] shadow-lg rounded-xl flex items-center justify-between"
+        >
+          <!-- Image -->
+          <img
+            src="./images/vegetable-busket.png"
+            alt="Grocery Basket"
+            class="h-52 w-52 object-cover"
+          />
+
+          <!-- Text and Form -->
+          <div class="ml-8">
+            <h2 class="text-3xl font-bold text-gray-800">Get Grocery News!</h2>
+            <p class="text-gray-600 mt-2">
+              Exclusive training tips, tricks, product deals, and more.
+            </p>
+            <form class="">
+              <input
+                type="text"
+                placeholder="Enter email...."
+                class="input my-[38px] input-bordered w-full max-w-xs"
+              />
+              <button
+                type="submit"
+                class="bg-accent text-white text-xl px-[30px] py-[10px] rounded-lg hover:bg-green-700"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-32 text-white">
+          <!-- Brand Section -->
+          <div>
+            <img src="./images/logo-footer.png" alt="" />
+            <p class="text-sm mt-2 max-w-xs">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends.
+            </p>
+          </div>
+
+          <!-- Links Section -->
+          <div>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">Products</a></li>
+              <li><a href="#" class="hover:underline">Services</a></li>
+              <li><a href="#" class="hover:underline">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Links Section -->
+          <div>
+            <h3 class="font-semibold mb-4">Follow Us</h3>
+            <div class="flex text-2xl space-x-7">
+              <a href="#" class="hover:opacity-75">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="hover:opacity-75">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="hover:opacity-75">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="#" class="hover:opacity-75">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      y
+    </footer>
   </body>
 </html>
